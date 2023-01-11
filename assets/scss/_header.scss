@@ -1,0 +1,142 @@
+.header-title {
+  position: relative;
+  padding-top: 210px;
+
+  @media (min-width: $lg + 100px) {
+    height: 1050px;
+  }
+
+  @media (min-width: $lg + 1) and (max-width: $lg + 99) {
+    height: 950px;
+  }
+
+  @media (min-width: $md + 1) and (max-width: $lg) {
+    height: 840px;
+  }
+
+  @media (min-width: $sm + 1) and (max-width: $md) {
+    height: 730px;
+  }
+
+
+  &__header {
+
+    &-title {
+      h1 {
+        @media (max-width: $lg) {
+          font-size: $h1font / 1.3;
+        }
+      }
+    }
+
+    &-description {
+      margin: 27px 0 56px;
+      max-width: 475px;
+    }
+
+    &-button {
+
+      a {
+        font-size: $lsfont;
+        line-height: $lslh;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        background-color: $btncolor;
+        color: $lscolor;
+        text-align: center;
+        padding: 11px 0;
+        width: 189px;
+        transition: all 0.5s ease;
+        border: 2px solid transparent;
+
+        &:hover {
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.4) inset;
+          border: 2px solid $btnborder;
+        }
+      }
+    }
+  }
+
+  &__pictures {
+    background: url(../img/placeholder.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 142px;
+
+    @media (min-width: $lg + 100px) {
+      width: 665px;
+      height: 840px;
+    }
+
+    @media (min-width: $lg + 1) and (max-width: $lg + 99) {
+      width: 610px;
+      height: 771px;
+    }
+
+    @media (min-width: $md + 1) and (max-width: $lg) {
+      width: 500px;
+      height: 632px;
+    }
+
+    @media (min-width: $sm + 1) and (max-width: $md) {
+      width: 400px;
+      height: 505px;
+    }
+
+    @media (min-width: $xs + 1) and (max-width: $sm) {
+      width: 500px;
+      height: 632px;
+      position: relative;
+      top: 50px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: $xs) {
+      width: 300px;
+      height: 379px;
+      position: relative;
+      top: 50px;
+      margin: 0 auto;
+    }
+
+    .video {
+      position: absolute;
+      left: -125px;
+      bottom: 166px;
+      width: 60%;
+      height: 37%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 30px 80px 140px rgba(0, 0, 0, 0.55);
+
+      @media (min-width: $md + 1) and (max-width: $lg) {
+        left: -15px;
+      }
+
+      @media (min-width: $sm + 1) and (max-width: $md) {
+        left: -10px;
+        bottom: -10px;
+      }
+
+      @media (max-width: $sm) {
+        left: 50%;
+        margin-left: -150px;
+        bottom: 50%;
+        margin-bottom: -117px;
+      }
+
+      a {
+        width: 65px;
+        height: 65px;
+        position: absolute;
+        cursor: pointer;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
